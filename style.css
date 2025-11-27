@@ -436,6 +436,13 @@ p {
         width: 350px;
         height: 400px;
     }
+    /* PROJECTS SECTION */
+    .projects-section h2 {
+        font-size: 1.8rem;
+    }
+    .projects-section .project-card {
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
     /* MOBILE STYLES */
@@ -468,6 +475,15 @@ p {
         grid-template-columns: repeat(1, auto);
     }
     .card .items {
+        width: 300px;
+        height: 350px;
+    }
+
+    /* PROJECTS SECTION */
+    .projects-section .project-card {
+        grid-template-columns: repeat(1, auto);
+    }
+    .project-card .project-items {
         width: 300px;
         height: 350px;
     }
