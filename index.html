@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Ardent Coders</title>
+</head>
+<body>
+    <main>
+        <!-- NAVBAR SECTION -->
+        <section class="navbar-section">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <!-- Logo -->
+                    <div class="logo">Ardent Coders</div>
+
+                    <!-- Menu -->
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+
+                        <li class="dropdown">
+                            <a href="#programmes" class="drop-btn">Programmes ▾</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Scratch Programming</a></li>
+                                <li><a href="#">MIT App Inventor</a></li>
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">Robotics / Arduino</a></li>
+                                <li><a href="#">Python</a></li>
+                                <li><a href="#">Digital Literacy</a></li>
+                                <li><a href="#">School Programmes</a></li>
+                                <li><a href="#">Tech Bootcamps</a></li>
+                                <li><a href="#">Community Outreach</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                        <li><a href="#" class="cta-btn">Enrol Now</a></li>
+                    </ul>
+
+                    <!-- Mobile Hamburger Menu -->
+                    <div class="hamburger" onclick="toggleMenu()">
+                        ☰
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="home-section">
+            <h1>Empowering Young Minds to Code, Create, and Innovate</h1>
+            <h3>Hands-on coding and tech education for children and teens, preparing them for a digital future.</h3>
+
+            <div class="btn-div">
+                <button class="enroll-btn">Enroll Your Child Today</button>
+                <button class="explore-btn">Explore Programs</button>
+            </div>
+        </section>
+        
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <div class="img-div">
+                <img src="images/about.jpg" alt="about">
+            </div>
+
+            <div class="content">
+                <h2>About Ardent Coders</h2>
+                <p>
+                    Ardent Coders is a focused education firm dedicated to giving young people (teenagers and kids) the digital skills they need to succeed.
+                    We address the lack of accessible tech training by offering hands-on programmes in coding, app design, and game creation.
+                </p>
+                <p>
+                    Our goal is simple: to turn learners into confident creators. We empower the next generation to build the digital world, not just consume it.
+                </p>
+
+                <h3>Vision</h3>
+                <p>To raise a generation of passionate, innovative tech creators who will shape the digital future.</p>
+
+                <h3>Mission</h3>
+                <p>To empower teens and kids with foundational and advanced coding skills through hands-on, mentorship-driven, and affordable learning experiences.</p>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="programmes" class="services-section">  
+            <h2>Our Programmes</h2>
+            <div class="card">
+                <div class="items">
+                    <img src="images/scratch...jpeg" alt="scratch">
+                    <h3>Scratch Programming</h3>
+                    <p>A fun and visual introduction to coding for young beginners.</p>
+                    <button>Enroll Now</button>
+                </div>
+
+                <div class="items">
+                    <img src="images/app inventor.jpg" alt="app inventor">
+                    <h3>MIT App Inventor</h3>
+                    <p>Learn to create mobile apps using a simple drag-and-drop interface.</p>
+                    <button>Enroll Now</button>
+                </div>
+
+                <div class="items">
+                    <img src="images/web development.jpg" alt="web development">
+                    <h3>Web Development</h3>
+                    <p>Build stunning websites using HTML, CSS, and JavaScript.</p>
+                    <button>Enroll Now</button>
+                </div>
+
+                <div class="items">
+                    <img src="images/robotics.jpg" alt="robotics">
+                    <h3>Robotics / Arduino</h3>
+                    <p>Dive into the world of robotics and learn to program Arduino boards.</p>
+                    <button>Enroll Now</button>
+                </div>
+
+                <div class="items">
+                    <img src="images/python.jpg" alt="python">
+                    <h3>Python Programming</h3>
+                    <p>Master Python, a versatile language used across different fields.</p>
+                    <button>Enroll Now</button>
+                </div>
+
+                <div class="items">
+                    <img src="images/digital literacy.jpg" alt="digital literacy">
+                    <h3>Digital Literacy</h3>
+                    <p>Equip yourself with essential digital skills for the modern world.</p>
+                    <button>Enroll Now</button>
+                </div>
+
+                <div class="items">
+                    <img src="images/school partnership.jpg" alt="school programmes">
+                    <h3>School Programmes</h3>
+                    <p>Customized coding and tech workshops tailored for schools.</p>
+                    <button>Enroll Now</button>
+                </div>
+
+                <div class="items">
+                    <img src="images/holiday bootcamp.jpg" alt="tech bootcamps">
+                    <h3>Tech Bootcamps</h3>
+                    <p>Intensive coding bootcamps designed to accelerate learning.</p>
+                    <button>Enroll Now</button>
+                </div>
+
+                <div class="items">
+                    <img src="images/community outreach.jpg" alt="community outreach">
+                    <h3>Community Outreach</h3>
+                    <p>Bringing coding education to underserved communities.</p>
+                    <button>Enroll Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects-section">
+            <h2>Our Students Projects</h2>
+            <p>See how our students bring ideas to life! Explore the innovative websites, games, apps, and robots they've built.</p>
+
+            <div class="project-card">
+                <div class="project-items">
+                    <img src="images/project car.jpg" alt="Robot Car">
+                    <h2>Robotic Car</h2>
+                    <p>A line-following robotic car designed and built to navigate autonomously along a defined path using infrared sensors and basic programming.</p>
+                </div>
+
+                <div class="project-items">
+                    <img src="images/product preview.png" alt="Product Preview">
+                    <h2>Product Preview Card</h2>
+                    <p>A Product Preview Card is a standardized UI component used in listings and e-commerce to display a single item.</p>
+                </div>
+
+                <div class="project-items">
+                    <img src="images/Dodge.png" alt="Dodge Game">
+                    <h2>Dodge Game</h2>
+                    <p>An exciting Scratch game where players must dodge obstacles and survive as long as possible.</p>
+                </div>
+
+                <div class="project-items">
+                    <img src="images/calculator.png" alt="Calculator App">
+                    <h2>Calculator App</h2>
+                    <p>A simple and user-friendly calculator app built using MIT App Inventor.</p>
+                </div>
+                
+                <div class="project-items">
+                    <img src="images/Tinker Circuit.png" alt="TinkerCad Circuit">
+                    <h2>TinkerCad Circuit</h2>
+                    <p>A virtual Motion Detector electronics circuit designed and simulated using TinkerCad.</p>
+                </div>
+
+                <div class="project-items">
+                    <img src="images/social proof.png" alt="social proof">
+                    <h2>Social Proof Section</h2>
+                    <p>A Social Proof Section that showcases testimonials, reviews, and endorsements.</p>
+                </div>
+
+                <div class="project-items"></div>
+                <div class="project-items"></div>
+                <div class="project-items"></div>
+            </div>
+        </section>
+
+        <section class="testimonials-section"></section>
+        <section class="faqs-section"></section>
+        <section class="blog-section"></section>
+        <section class="contact-section"></section>
+        <section class="footer-section"></section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
