@@ -553,6 +553,23 @@ p {
     .project-items img {
         height: 55%;
     }
+    /* FREE DEMO & TRIAL SESSIONS */
+    .free-class {
+        padding: 60px 20px;
+    }
+    .free-class .free-detail {
+        padding: 15px;
+    }
+    .free-detail h2 {
+        font-size: 1.5rem;
+    }
+    .free-detail p {
+        font-size: 0.95rem;
+    }
+    .free-detail button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }   
 }
 
 /* Smooth fade-in animation */
