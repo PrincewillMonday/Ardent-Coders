@@ -352,6 +352,19 @@ p {
     font-size: 0.9rem;
 }
 
+/* FREE DEMO & TRIAL SESSIONS */
+.free-class {
+    width: 100%;
+    padding: 80px 80px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.free-class .free-detail {
+    max-width: 800px;
+    margin: auto;
+    /* background-color: #F47A20; */
+}
+
 
 /* TABLET MENU STYLES */
 @media (max-width: 920px) {
