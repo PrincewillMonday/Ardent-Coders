@@ -185,6 +185,9 @@ p {
 .btn-div .enroll-btn:hover {
     background: #d96b1c;
 }
+.btn-div .enroll-btn:active {
+    transform: scale(0.98);
+}
 .btn-div .explore-btn {
     background: transparent;
     border: 2px solid #F47A20;
@@ -201,6 +204,9 @@ p {
 .btn-div .explore-btn:hover {
     background: #F47A20;
     color: #fff;
+}
+.btn-div .explore-btn:active {
+    transform: scale(0.98);
 }
 
 /* ABOUT SECTION */
@@ -298,6 +304,12 @@ p {
     cursor: pointer;
     transition: 0.3s ease;
 }
+.items button:hover {
+    background: #005fcc;
+}
+.items button:active {
+    transform: scale(0.98);
+}
 
 /* PROJECTS SECTION */
 .projects-section {
@@ -362,7 +374,42 @@ p {
 .free-class .free-detail {
     max-width: 800px;
     margin: auto;
-    /* background-color: #F47A20; */
+    padding: 20px;
+    background-color: #dddede;
+    border-radius: 10px;
+    box-shadow: 0px 0 15px rgba(0,0,0,0.2);
+}
+.free-detail h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #12355B;
+    margin-bottom: 0.3em;
+}
+.free-detail p {
+    color: #161B16;
+    line-height: 2;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.free-detail button {
+    padding: 12px 25px;
+    background: #F47A20;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.free-detail button:hover {
+    background: #d96b1c;
+}
+.free-detail button:active {
+    transform: scale(0.98);
 }
 
 
