@@ -437,6 +437,9 @@ p {
         height: 400px;
     }
     /* PROJECTS SECTION */
+    .projects-section {
+        padding: 60px 35px;
+    }
     .projects-section h2 {
         font-size: 1.8rem;
     }
@@ -486,6 +489,9 @@ p {
     .project-card .project-items {
         width: 300px;
         height: 350px;
+    }
+    .project-items img {
+        height: 55%;
     }
 }
 
