@@ -420,6 +420,13 @@ p {
     max-width: 800px;
     margin: auto;
 }
+.faqs-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #12355B;
+    margin-bottom: 1em;
+    text-align: center;
+}
 .faqs-section .faq-item {
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
@@ -541,6 +548,18 @@ p {
     .projects-section .project-card {
         grid-template-columns: repeat(2, auto);
     }
+
+    /* FAQ SECTION */
+    .faqs-section {
+        padding: 60px 40px;
+    }
+    .faqs-section h2 {
+        font-size: 1.8rem;
+    }
+    .faqs-section .faq-item{
+        font-size: 0.95rem;
+    }
+
 }
 
     /* MOBILE STYLES */
@@ -604,7 +623,22 @@ p {
     .free-detail button {
         padding: 10px 20px;
         font-size: 1rem;
-    }   
+    }
+
+    /* FAQ SECTION */
+    .faqs-section {
+        padding: 60px 20px;
+    }
+    .faqs-section h2 {
+        font-size: 1.5rem;
+    }
+    .faqs-section .faq-item{
+        font-size: 0.9rem;
+    }
+    .faq-item .faq-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
 }
 
 /* Smooth fade-in animation */
