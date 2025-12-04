@@ -320,7 +320,7 @@ p {
 }
 .projects-section h2 {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #12355B;
     margin-bottom: 0.5em;
 }
@@ -418,6 +418,69 @@ p {
     padding: 80px 80px;
     background-color: #F8F9F9;
     text-align: center;
+}
+.blog-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #12355B;
+    margin-bottom: 1em;
+}
+.blog-section p {
+    color: #161B16;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+.blog-section .grid-blog {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 25px;
+}
+.grid-blog .blog-item {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 300px;
+}
+.grid-blog .blog-item:hover {
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+}
+.blog-item img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+}
+.blog-item h3 {
+    margin: 10px 15px 5px 15px;
+    color: #12355B;
+    font-size: 1.1rem;
+}
+.blog-item p {
+    font-size: 0.9rem;
+    color: #161B16;
+    margin: 0 15px 15px 15px;
+    line-height: 1.4;
+}
+.blog-item button {
+    margin: 0 15px 15px 15px;
+    padding: 8px 15px;
+    background: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.blog-item button:hover {
+    background: #005fcc;
+}
+.blog-item button:active {
+    transform: scale(0.98);
 }
 
 /* FAQ SECTION */
@@ -548,13 +611,50 @@ p {
     }
     /* PROJECTS SECTION */
     .projects-section {
-        padding: 60px 35px;
+        padding: 60px 25px;
     }
     .projects-section h2 {
         font-size: 1.8rem;
     }
     .projects-section .project-card {
         grid-template-columns: repeat(2, auto);
+    }
+    .project-card .project-items {
+        width: 350px;
+        height: 400px;
+    }
+    .project-items img {
+        height: 55%;
+    }
+
+    /* FREE DEMO & TRIAL SESSIONS */
+    .free-class {
+        padding: 60px 40px;
+    }
+    .free-class .free-detail {
+        padding: 20px;
+    }
+    .free-detail h2 {
+        font-size: 1.8rem;
+    }
+    .free-detail p {
+        font-size: 1rem;
+    }
+    .free-detail button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    /* BLOG SECTION */
+    .blog-section {
+        padding: 60px 40px;
+    }
+    .blog-section h2 {
+        font-size: 1.8rem;
+    }
+    .blog-section .grid-blog {
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
     }
 
     /* FAQ SECTION */
@@ -605,6 +705,9 @@ p {
     }
 
     /* PROJECTS SECTION */
+    .projects-section {
+        padding: 60px 25px;
+    }
     .projects-section .project-card {
         grid-template-columns: repeat(1, auto);
     }
@@ -631,6 +734,36 @@ p {
     .free-detail button {
         padding: 10px 20px;
         font-size: 1rem;
+    }
+
+    /* FREE DEMO & TRIAL SESSIONS */
+    .free-class {
+        padding: 60px 20px;
+    }
+    .free-class .free-detail {
+        padding: 15px;
+    }
+    .free-detail h2 {
+        font-size: 1.5rem;
+    }
+    .free-detail p {
+        font-size: 0.95rem;
+    }
+    .free-detail button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* BLOG SECTION */
+    .blog-section {
+        padding: 60px 20px;
+    }
+    .blog-section h2 {
+        font-size: 1.5rem;
+    }
+    .blog-section .grid-blog {
+        grid-template-columns: repeat(1, auto);
+        gap: 15px;
     }
 
     /* FAQ SECTION */
