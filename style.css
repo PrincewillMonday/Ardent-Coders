@@ -412,6 +412,14 @@ p {
     transform: scale(0.98);
 }
 
+/* BLOG SECTION */
+.blog-section {
+    width: 100%;
+    padding: 80px 80px;
+    background-color: #F8F9F9;
+    text-align: center;
+}
+
 /* FAQ SECTION */
 .faqs-section {
     width: 100%;
