@@ -524,11 +524,15 @@ p {
     color: #0077ff;
 }
 .faq-item .faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+.faq-inner {
     padding: 0 15px 15px 15px;
-    display: none;
     color: #161B16;
-    line-height: 1.5;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 
