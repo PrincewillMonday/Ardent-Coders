@@ -633,6 +633,42 @@ form button:active {
     text-decoration: none;
 }
 
+/* POPUP MESSAGE */
+.popup {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(-20px);
+    z-index: 3000;
+    font-weight: 600;
+}
+
+/* Visible State */
+.popup.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Success message */
+.popup.success {
+    border-left: 5px solid #28a745;
+    color: #155724;
+}
+
+/* Error message */
+.popup.error {
+    border-left: 5px solid #dc3545;
+    color: #721c24;
+}
+
 
 /* TABLET MENU STYLES */
 @media (max-width: 920px) {
