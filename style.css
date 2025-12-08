@@ -777,6 +777,21 @@ form button:active {
         font-size: 0.95rem;
     }
 
+    /* CONTACT SECTION */
+    .contact-section {
+        padding: 60px 40px;
+    }
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+    .contact-section .grid-contact {
+        grid-template-columns: repeat(1, auto);
+    }
+    .grid-contact .contact-form, .grid-contact .contact-info {
+        width: 100%;
+        margin: auto;
+    }
+
 }
 
     /* MOBILE STYLES */
@@ -870,6 +885,17 @@ form button:active {
     .faq-item .faq-btn {
         padding: 12px;
         font-size: 1rem;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section {
+        padding: 60px 20px;
+    }
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+    .contact-section p {
+        font-size: 0.95rem;
     }
 }
 
