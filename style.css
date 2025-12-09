@@ -894,6 +894,17 @@ p a {
         margin: auto;
     }
 
+    /* FOOTER SECTION */
+    .footer-section .grid-footer-div {
+        grid-template-columns: repeat(2, auto);
+        gap: 15px;
+    }
+    .grid-footer-div .footer-item {
+        width: 100%;
+    }
+    .footer-section .footer-bottom {
+        font-size: 0.9rem;
+    }
 }
 
     /* MOBILE STYLES */
@@ -1002,6 +1013,16 @@ p a {
     }
     .contact-section p {
         font-size: 0.95rem;
+    }
+
+    /* FOOTER SECTION */
+    .footer-section .grid-footer-div {
+        grid-template-columns: repeat(1, auto);
+        gap: 15px;
+    }
+    .grid-footer-div .footer-item {
+        width: 100%;
+        text-align: center;
     }
 }
 
