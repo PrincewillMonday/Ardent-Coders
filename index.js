@@ -1,48 +1,40 @@
-//MOBILE NAVIGATION TOGGLE
+// MOBILE NAVIGATION TOGGLE
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("active");
 }
 
 // FAQ ACCORDION
 const faqButtons = document.querySelectorAll(".faq-btn");
-
 faqButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
         const content = btn.nextElementSibling;
-
-        // Close all other questions
         faqButtons.forEach((otherBtn) => {
             if (otherBtn !== btn) {
                 otherBtn.classList.remove("active");
                 otherBtn.nextElementSibling.style.maxHeight = null;
             }
         });
-
-        // Toggle the selected question
         btn.classList.toggle("active");
-
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
     });
 });
 
-// CONTACT FORM SUBMISSION
+// CONTACT FORM
 let smsBtn = document.querySelector(".sms-btn");
 let nameInput = document.querySelector("input[type='text']");
-let emailInput = document.querySelector("input[type='email']"); // FIXED SELECTOR
+let emailInput = document.querySelector("input[type='email']");
 let messageInput = document.querySelector("textarea");
 let programmeSelect = document.querySelector("select[name='programme']");
 let contactForm = document.querySelector(".contact-form form");
+
+// Google Apps Script Web App URL
+const scriptURL = "https://script.google.com/macros/s/AKfycbxnTyzeisK804XbGjMWTSENpwZ7SwDHY1r_fYBQbJ1cgCRK-lJG_3bfyE-amixGF5E3Uw/exec";
 
 function showPopup(message, type) {
     const popup = document.getElementById("popup");
     const popupText = document.getElementById("popup-text");
 
     popupText.textContent = message;
-
     popup.className = `popup show ${type}`; // type = success or error
 
     setTimeout(() => {
@@ -50,12 +42,13 @@ function showPopup(message, type) {
     }, 2500);
 }
 
-// Email validation function
+// Email validation
 function isValidEmail(email) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
 }
 
+// Submit handler
 smsBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -64,19 +57,40 @@ smsBtn.addEventListener("click", (e) => {
     let message = messageInput.value.trim();
     let programme = programmeSelect.value;
 
-    // Check empty fields
     if (!name || !email || !message || !programme) {
-        showPopup("Please fill in all fields before sending your message.", "error");
+        showPopup("Please fill in all fields.", "error");
         return;
     }
 
-    // Check email format
     if (!isValidEmail(email)) {
         showPopup("Please enter a valid email address.", "error");
         return;
     }
 
-    showPopup("Message sent successfully! We'll get back to you soon.", "success");
+    // Prepare URL-encoded params
+    let params = new URLSearchParams();
+    params.append("name", name);
+    params.append("email", email);
+    params.append("message", message);
+    params.append("programme", programme);
 
-    contactForm.reset();
+    fetch(scriptURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: params.toString()
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.result === "success") {
+            showPopup("Message sent! Check your email for confirmation.", "success");
+            contactForm.reset();
+        } else {
+            showPopup("Error sending message. Try again.", "error");
+            console.error(data);
+        }
+    })
+    .catch(error => {
+        showPopup("Error sending message. Check console.", "error");
+        console.error(error);
+    });
 });
