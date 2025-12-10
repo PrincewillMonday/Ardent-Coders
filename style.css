@@ -394,7 +394,7 @@ p {
     text-align: center;
     margin-bottom: 1em;
 }
-.free-detail button {
+.free-detail a {
     padding: 12px 25px;
     background: #F47A20;
     color: #fff;
@@ -407,10 +407,10 @@ p {
     border: none;
     outline: none;
 }
-.free-detail button:hover {
+.free-detail a:hover {
     background: #d96b1c;
 }
-.free-detail button:active {
+.free-detail a:active {
     transform: scale(0.98);
 }
 
@@ -851,7 +851,7 @@ p a {
     .free-detail p {
         font-size: 1rem;
     }
-    .free-detail button {
+    .free-detail a {
         padding: 12px 20px;
         font-size: 1rem;
     }
@@ -972,7 +972,7 @@ p a {
     .free-detail p {
         font-size: 0.95rem;
     }
-    .free-detail button {
+    .free-detail a {
         padding: 10px 20px;
         font-size: 1rem;
     }
